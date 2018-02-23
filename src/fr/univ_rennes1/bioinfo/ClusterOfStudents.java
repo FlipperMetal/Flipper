@@ -24,7 +24,7 @@ public class ClusterOfStudents {
 	}
 	
 	public ClusterOfStudents(GroupOfStudents aGroupOfStudents) {
-		// TODO: DO SOMETHING HERE
+		
 	}
 	
 	public ClusterOfStudents(ClusterOfStudents cluster1, ClusterOfStudents cluster2) {
