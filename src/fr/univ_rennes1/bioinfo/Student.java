@@ -55,6 +55,7 @@ public class Student {
 		Student loulou = new Student("loulou", 18.5);
 		Student geo = new Student("geo", 19.5);
 		Student donald = new Student("donald", 10.5);
+		
 	}
 
 }

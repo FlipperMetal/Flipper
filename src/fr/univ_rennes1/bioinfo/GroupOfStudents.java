@@ -1,6 +1,7 @@
 package fr.univ_rennes1.bioinfo;
 
 import java.util.ArrayList;
+import java.lang.Math;
 
 
 /**
@@ -10,15 +11,38 @@ import java.util.ArrayList;
 public class GroupOfStudents extends ArrayList<Student> {
 	
 	public double getMinGrade() {
-		// TODO: DO SOMETHING HERE and uncomment the method call in the main(...)
+		
+		double minG=20;
+		for (Student i: this) {
+			if (i.getGrade()<=minG) {
+				minG=i.getGrade();
+			}
+			
+		}
+		return minG;
 	}
 	
 	public double getMaxGrade() {
-		// TODO: DO SOMETHING HERE and uncomment the method call in the main(...)
+		
+		double maxG=0;
+		for (Student i: this) {
+			if (i.getGrade()>=maxG) {
+				maxG=i.getGrade();
+			}
+		}
+		return maxG;
 	}
 	
+	
+	
 	public double getAverageGrade() {
-		// TODO: DO SOMETHING HERE and uncomment the method call in the main(...)
+		
+		double avrg=0;
+		double total=0;
+		for (Student i:this) {
+			total += i.getGrade();
+		}
+		return avrg= total/this.size();
 	}
 
 	/**
@@ -39,9 +63,9 @@ public class GroupOfStudents extends ArrayList<Student> {
 		m1bio.add(donald);
 		
 		// TODO: uncomment when needed
-		//System.out.println("Grade min: " + m1bio.getMinGrade());
-		//System.out.println("Grade max: " + m1bio.getMaxGrade());
-		//System.out.println("Average: " + m1bio.getAverageGrade());
+		System.out.println("Grade min: " + m1bio.getMinGrade());
+		System.out.println("Grade max: " + m1bio.getMaxGrade());
+		System.out.println("Average: " + m1bio.getAverageGrade());
 	}
 
 }
