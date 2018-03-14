@@ -16,14 +16,21 @@ public class ClusterOfStudents {
 	protected ArrayList<Student> students;
 	
 	public ClusterOfStudents(){
-		// TODO: DO SOMETHING HERE
+		subClusters=new ArrayList<ClusterOfStudents>();
+		students=new ArrayList<Student>();
 	}
 	
 	public ClusterOfStudents(Student aStudent){
-		// TODO: DO SOMETHING HERE
+		subClusters=new ArrayList<ClusterOfStudents>();
+		students=new ArrayList<Student>();
+		students.add( aStudent);
+		
 	}
 	
-	public ClusterOfStudents(GroupOfStudents aGroupOfStudents) {
+	public  ClusterOfStudents(GroupOfStudents aGroupOfStudents) {
+		subClusters=new ArrayList<ClusterOfStudents>();
+		students=new ArrayList<Student>();
+		students.addAll(aGroupOfStudents);
 		
 	}
 	
