@@ -52,11 +52,18 @@ public class ClusterOfStudents {
 	}
 	
 	protected String getNewickIntermediate() {
-		// TODO: DO SOMETHING HERE
+		String taxon="(";
+		for (int  i=0; i<size(subClusters); i++) {
+			if 
+			taxon += taxon + "(subClusters(i)";
+		}
 	}
 	
 	public String getNewick() {
-		// TODO: DO SOMETHING HERE
+		String clade="(";
+		for (int i=0; i<size(subClusters); i++) {
+			
+		}
 	}
 	
 
@@ -73,13 +80,16 @@ public class ClusterOfStudents {
 		Student loulou = new Student("loulou", 18.5);
 		
 		ClusterOfStudents geocluster= new ClusterOfStudents(geo);
-		
+
 		GroupOfStudents m1bio = new GroupOfStudents();
 		m1bio.add(riri);
 		m1bio.add(fifi);
 		m1bio.add(loulou);
 		m1bio.add(geo);
 		m1bio.add(donald);
+		
+		ClusterOfStudents biocluster= new ClusterOfStudents( m1bio);
+		
 		
 		ClusterOfStudents bioCluster = new ClusterOfStudents(m1bio);
 		System.out.println("Before clustering:");
