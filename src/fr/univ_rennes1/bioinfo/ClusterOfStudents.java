@@ -72,7 +72,7 @@ public class ClusterOfStudents {
 		Student donald = new Student("donald", 10.5);
 		Student loulou = new Student("loulou", 18.5);
 		
-		ClusterOfStudents geocluster= new ClusterOfStudents("geo");
+		ClusterOfStudents geocluster= new ClusterOfStudents(geo);
 		
 		GroupOfStudents m1bio = new GroupOfStudents();
 		m1bio.add(riri);
